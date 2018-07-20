@@ -1,77 +1,25 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Congratulations Sarin</title>
+<!doctype HTML>
+<html>
+    <title>Congratulations Sarin</title>
     <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
-<style>.amlk_notification,
-.amlk_notification_container {
-    margin-right: 3px !important;
-    margin-left: 0px !important;
-}
-
-.amlk_popup {
-    direction: rtl;
-}
-
-.amlk_popup-arrow {
-    right: auto;
-    left: -14px;
-}
-
-.amlk_popup-text li {
-    text-align: right;
-}
-
-.amlk_popup-text li .amlk_popup-text-name {
-    float: right;
-}
-
-.amlk_popup-text li .amlk_popup-text-user-score {
-    float: right;
-    margin-right: 0px;
-    margin-left: 5px;
-}
-
-.amlk_up-vote, .amlk_down-vote {
-    left: 7px;
-    right: auto;
-}
-
-.amlk_popup-text li .amlk_popup-text-score {
-    left: 0px;
-    right: auto;
-}
-
-.amlk_popup-text li:first-child .amlk_popup-text-user-score {
-    margin-right: 3px;
-    margin-left: 0px;
-}
-
-.amlk_popup-text li:first-child .amlk_up-vote, .amlk_popup-text li:first-child .amlk_down-vote{
-    left: 5px;
-    right: auto;
-}</style><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Mono" media="all" /></head><body style="margin: -241.5px 0px 0px; overflow: hidden; width: 1920px; height: 1440px;" class="">
-<a-scene arjs="debugUIEnabled: false;" class="fullscreen" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" avatar-recorder="" avatar-replayer="autoPlay:false;cameraOverride:#null;loop:true" aframe-inspector-removed-embedded="undefined"><canvas class="a-canvas" data-aframe-canvas="true" width="300" height="150"></canvas>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs="debugUIEnabled: false;">
 
     <a-assets>
         <a-asset-item id="cake-obj" src="sarin.obj"></a-asset-item>
         <a-asset-item id="cake-mtl" src="sarin.mtl"></a-asset-item>
         <a-asset-item id="brush" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/brush.json"></a-asset-item>
-        --&gt;
+        -->
     </a-assets>
 
 
-    <a-marker preset="hiro" position="-0.43 0.139 -1.42" material="" arjs-hit-testing="">
-        <a-obj-model src="#cake-obj" mtl="#cake-mtl" rotation="37.52873558106892 -28.87707287459349 -9.167324722093172" scale="3 3 3" position="1.53 0.118 -2.568" material="" obj-model=""></a-obj-model>
-        <a-entity position="-2.624 0 0">
-            <a-entity position="0 0 -1" particle-system="preset:default;color:#f9e154;particleCount:3000;direction:-1;rotationAxis:z"></a-entity>        
-        </a-entity>
-        <a-entity position="2.172 0 0">
-            <a-entity position="0 0 -2" material="color:red" scale="0.5 0.5 0.5" text-geometry="value:Congratulations Sarin;font:https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/c6a977a7/Happy_Birthday/assets/brush.json">
-            </a-entity>
-        </a-entity>
+    <a-marker preset="hiro">
+        <a-obj-model src="#cake-obj" mtl="#cake-mtl" scale="3 3 3" position=></a-obj-model>
     </a-marker>
 
-<a-entity id="spectatorCameraRig" position="0 1.6 2"><a-entity id="spectatorCamera" camera="active:false" look-controls="" wasd-controls="fly:true"></a-entity></a-entity></a-scene>
-
-<video autoplay="" muted="" playsinline="" style="width: 1920px; height: 1440px; position: absolute; top: 0px; left: 0px; z-index: -2; margin-left: 0px; margin-top: -241.5px;"></video><script src="https://unpkg.com/aframe-motion-capture-components@0.2.6/dist/aframe-motion-capture-components.min.js"></script></body></html>
+</a-scene>
+</body>
+</html>
